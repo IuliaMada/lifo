@@ -22,18 +22,18 @@ class Lifo
 
 	end
 end
-words =Lifo.new
+words = Lifo.new
 while true
 	puts "Choose add/delete/exit"
 	@input = gets.chomp
 	if @input == "add"
 		puts " Choose a color:"
 		@input = gets.chomp
-		 words.insert @input
+		words.insert @input
 	elsif @input == "delete"
-			puts words.extract
+		puts words.extract
 	elsif @input == "exit"
-		"Buy,Buy"
+		puts "Buy,Buy"
 		break
 	else
 		puts "Try add, delete or exit."
